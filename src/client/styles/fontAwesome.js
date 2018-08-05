@@ -2,13 +2,15 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faBars,
-  faChild
+  faChild,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons';
 
 const initFontAwesomeLibrary = () => {
   library.add(
     faBars,
-    faChild
+    faChild,
+    faTimes
   );
 };
 
