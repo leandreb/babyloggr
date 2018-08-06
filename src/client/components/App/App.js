@@ -3,6 +3,8 @@ import React, { Fragment } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
+import common from '../../styles/common';
+
 import AppHeader from './AppHeader';
 
 import Dashboard from '../Dashboard/Dashboard';
@@ -10,7 +12,8 @@ import ExpressionsContainer from '../../containers/Expressions/index';
 import Diapers from '../Diapers/Diapers';
 
 const MainSection = styled.section`
-  padding-top: 3.2em;
+  padding: 1em;
+  margin-top: ${common.size.header.small};
 `;
 
 const App = () => (

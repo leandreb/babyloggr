@@ -7,7 +7,7 @@ const Dashboard = () => (
       <h2>Summary</h2>
     </header>
     <article>
-      10 expressions
+      test
     </article>
   </Fragment>
 );

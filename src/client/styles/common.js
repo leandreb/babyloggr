@@ -11,7 +11,7 @@ import { css } from 'styled-components';
 // };
 
 // common design vars
-const commonStyleVariables = {
+const commonCss = {
   palette: {
     white: '#fff',
     black: '#000',
@@ -22,10 +22,15 @@ const commonStyleVariables = {
   },
   font: {
     sans: 'Arial'
+  },
+  size: {
+    header: {
+      small: '3.2em',
+      medium: '4em'
+    }
   }
 };
-
-export default commonStyleVariables;
+export default commonCss;
 
 // mixins
 export function textShadowMixin(color = 'rgba(0, 0, 0, 0.25)') {

@@ -5,15 +5,8 @@ import PropTypes from 'prop-types';
 import ExpressionModel from '../../containers/Expressions/model';
 
 class ExpressionsForm extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      quantity: 0
-    };
-
-    this.quantityChanged = this.quantityChanged.bind(this);
-    this.formSubmited = this.formSubmited.bind(this);
+  state = {
+    quantity: 0
   }
 
   componentDidMount() {
@@ -23,11 +16,11 @@ class ExpressionsForm extends Component {
     }
   }
 
-  quantityChanged(event) {
+  quantityChanged = (event) => {
     this.setState({ quantity: event.target.value });
   }
 
-  formSubmited(event) {
+  formSubmited = (event) => {
     this.props.createEntry(new ExpressionModel(this.state.quantity));
     localStorage.setItem('last-expression', this.state.quantity);
     event.preventDefault();
